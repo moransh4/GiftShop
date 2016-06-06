@@ -146,6 +146,57 @@ body {
             }
         }
     }
+    .baby-price {
+        width: 292px;
+        height: 55px;
+        line-height: 55px;
+        background-color: #05aecc;
+        position: absolute;
+        right: 0;
+        bottom: 22px;
+        text-align: center;
+        color: white;
+        z-index: 999;
+        img {
+            position: absolute;
+            top: 25%;
+            left: 25%;
+        }
+        .baby-price-title {
+            font-size: 16px;
+        }
+        .price {
+            width: 86px;
+            height: 55px;
+            background-color: #323232;
+            font-size: 24px;
+            float: right;
+            padding-left: 15px;
+            .dolar {
+                font-size: 16px;
+                margin-right: 3px;
+            }
+            .cents {
+                font-size: 13px;
+                position: relative;
+                top: -7px;
+            }
+        }
+        .save-to-chart {
+            width: 53px;
+            height: 55px;
+            background-color: #f0626e;
+            float: right;
+            position: relative;
+        }
+        .present {
+            width: 53px;
+            height: 55px;
+            background-color: #00a1be;
+            float: right;
+            position: relative;
+        }
+    }
     .shop {
         margin-bottom: 38px;
         .wear-box {
@@ -229,56 +280,6 @@ body {
             &:hover {
                 opacity: 0.87;
                 background-color: #142251;
-            }
-            .baby-price {
-                width: 292px;
-                height: 55px;
-                line-height: 55px;
-                background-color: #05aecc;
-                position: absolute;
-                right: 0;
-                bottom: 22px;
-                padding-left: 12px;
-                color: white;
-                img {
-                    position: absolute;
-                    top: 25%;
-                    left: 25%;
-                }
-                .baby-price-title {
-                    font-size: 16px;
-                }
-                .price {
-                    width: 86px;
-                    height: 55px;
-                    background-color: #323232;
-                    font-size: 24px;
-                    float: right;
-                    padding-left: 15px;
-                    .dolar {
-                        font-size: 16px;
-                        margin-right: 3px;
-                    }
-                    .cents {
-                        font-size: 13px;
-                        position: relative;
-                        top: -7px;
-                    }
-                }
-                .save-to-chart {
-                    width: 53px;
-                    height: 55px;
-                    background-color: #f0626e;
-                    float: right;
-                    position: relative;
-                }
-                .present {
-                    width: 53px;
-                    height: 55px;
-                    background-color: #00a1be;
-                    float: right;
-                    position: relative;
-                }
             }
         }
         .search {
@@ -490,6 +491,22 @@ body {
     }
     figure {
         margin: 0;
+        width: 370px;
+        height: 200px;
+        &:hover {
+            width: 370px;
+            height: 200px;
+            opacity: 0.88;
+            background-color: #362a4f;
+        }
+        .baby-price {
+            display: none;
+            left: 10%;
+            top: 38%;
+        }
+        &:hover .baby-price {
+            display: block;
+        }
     }
     .heading {
         margin-bottom: 5px;
@@ -549,10 +566,6 @@ body {
         > img {
             max-width: 100%;
             height: auto;
-            &:hover {
-                opacity: 0.88;
-                background-color: #362a4f;
-            }
         }
     }
     .teaser__caption {
@@ -566,5 +579,97 @@ body {
     .swiper-button-prev {
         background-image: url(../img/shape.png)
     }
-}
+    .layer1 {
+        opacity: 0.87;
+        background-color: #142251;
+        width: 370px;
+        height: 200px;
+    }
+    // .layer2 {
+    //     background: linear-gradient(rgba(255, 204, 0, 0.2), rgba(255, 204, 0, 0.2)) ;
+    //     width: 370px;
+    //     height: 200px;
+    //     z-index: 999;
+    // }
+    .red-line {
+        width: 202px;
+        height: 1px;
+        background-color: #f0626e;
+        position: relative;
+        top: 1px;
+        left: 28px;
+        z-index: 9;
+    }
+    .featured-products {
+        .red-line {
+            width: 255px;
+        }
+        figure {
+            margin: 0;
+            width: 270px;
+            height: 400px;
+            position: relative;
+        }
+        .f-price {
+            width: 100%;
+            height: 110px;
+            background-color: white;
+            position: absolute;
+            bottom: 0;
+            border: 1px #d9dadc solid;
+            .p-title {
+                width: 100%;
+                height: 55px;
+                position: absolute;
+                top: 0;
+                padding-left: 13px;
+                h3 {
+                    color: #434343;
+                    font-size: 18px;
+                    font-weight: 400;
+                    margin-bottom: 0px;
+                    margin-top: 10px;
+                }
+                span {
+                    color: #f0626e;
+                    font-size: 13px;
+                    font-weight: 400;
+                }
+            }
+            .p-price {
+                width: 100%;
+                height: 55px;
+                position: absolute;
+                bottom: 0;
+                background-color: #f0626e;
+                .p-box {
+                    width: 54px;
+                    height: 100%;
+                    border-top: 1px #d9dadc solid;
+                    border-right: 1px #d9dadc solid;
+                    background-color: white;
+                    float: left;
+                }
+                .price {
+                	width: 101px;
+                	height: 100%;
+                    font-size: 24px;
+                    text-align: center;
+                    padding-top: 10px;
+                    color: white;
+                    float: right;
 
+                    .dolar {
+                        font-size: 16px;
+                        margin-right: 3px;
+                    }
+                    .cents {
+                        font-size: 13px;
+                        position: relative;
+                        top: -7px;
+                    }
+                }
+            }
+        }
+    }
+}

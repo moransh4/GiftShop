@@ -136,6 +136,57 @@ body header .dropdown-menu .item1 .item a {
   text-decoration: none;
   padding-top: 5px;
 }
+body .baby-price {
+  width: 292px;
+  height: 55px;
+  line-height: 55px;
+  background-color: #05aecc;
+  position: absolute;
+  right: 0;
+  bottom: 22px;
+  text-align: center;
+  color: white;
+  z-index: 999;
+}
+body .baby-price img {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+}
+body .baby-price .baby-price-title {
+  font-size: 16px;
+}
+body .baby-price .price {
+  width: 86px;
+  height: 55px;
+  background-color: #323232;
+  font-size: 24px;
+  float: right;
+  padding-left: 15px;
+}
+body .baby-price .price .dolar {
+  font-size: 16px;
+  margin-right: 3px;
+}
+body .baby-price .price .cents {
+  font-size: 13px;
+  position: relative;
+  top: -7px;
+}
+body .baby-price .save-to-chart {
+  width: 53px;
+  height: 55px;
+  background-color: #f0626e;
+  float: right;
+  position: relative;
+}
+body .baby-price .present {
+  width: 53px;
+  height: 55px;
+  background-color: #00a1be;
+  float: right;
+  position: relative;
+}
 body .shop {
   margin-bottom: 38px;
 }
@@ -220,56 +271,6 @@ body .shop .kids {
 body .shop .kids:hover {
   opacity: 0.87;
   background-color: #142251;
-}
-body .shop .kids .baby-price {
-  width: 292px;
-  height: 55px;
-  line-height: 55px;
-  background-color: #05aecc;
-  position: absolute;
-  right: 0;
-  bottom: 22px;
-  padding-left: 12px;
-  color: white;
-}
-body .shop .kids .baby-price img {
-  position: absolute;
-  top: 25%;
-  left: 25%;
-}
-body .shop .kids .baby-price .baby-price-title {
-  font-size: 16px;
-}
-body .shop .kids .baby-price .price {
-  width: 86px;
-  height: 55px;
-  background-color: #323232;
-  font-size: 24px;
-  float: right;
-  padding-left: 15px;
-}
-body .shop .kids .baby-price .price .dolar {
-  font-size: 16px;
-  margin-right: 3px;
-}
-body .shop .kids .baby-price .price .cents {
-  font-size: 13px;
-  position: relative;
-  top: -7px;
-}
-body .shop .kids .baby-price .save-to-chart {
-  width: 53px;
-  height: 55px;
-  background-color: #f0626e;
-  float: right;
-  position: relative;
-}
-body .shop .kids .baby-price .present {
-  width: 53px;
-  height: 55px;
-  background-color: #00a1be;
-  float: right;
-  position: relative;
 }
 body .shop .search {
   background-color: #f0626e;
@@ -475,6 +476,22 @@ body .buttons-swiper {
 }
 body figure {
   margin: 0;
+  width: 370px;
+  height: 200px;
+}
+body figure:hover {
+  width: 370px;
+  height: 200px;
+  opacity: 0.88;
+  background-color: #362a4f;
+}
+body figure .baby-price {
+  display: none;
+  left: 10%;
+  top: 38%;
+}
+body figure:hover .baby-price {
+  display: block;
 }
 body .heading {
   margin-bottom: 5px;
@@ -531,10 +548,6 @@ body .teaser__image > img {
   max-width: 100%;
   height: auto;
 }
-body .teaser__image > img:hover {
-  opacity: 0.88;
-  background-color: #362a4f;
-}
 body .teaser__caption {
   height: 6em;
   overflow: hidden;
@@ -545,4 +558,88 @@ body .swiper-button-next {
 }
 body .swiper-button-prev {
   background-image: url(../img/shape.png);
+}
+body .layer1 {
+  opacity: 0.87;
+  background-color: #142251;
+  width: 370px;
+  height: 200px;
+}
+body .red-line {
+  width: 202px;
+  height: 1px;
+  background-color: #f0626e;
+  position: relative;
+  top: 1px;
+  left: 28px;
+  z-index: 9;
+}
+body .featured-products .red-line {
+  width: 255px;
+}
+body .featured-products figure {
+  margin: 0;
+  width: 270px;
+  height: 400px;
+  position: relative;
+}
+body .featured-products .f-price {
+  width: 100%;
+  height: 110px;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  border: 1px #d9dadc solid;
+}
+body .featured-products .f-price .p-title {
+  width: 100%;
+  height: 55px;
+  position: absolute;
+  top: 0;
+  padding-left: 13px;
+}
+body .featured-products .f-price .p-title h3 {
+  color: #434343;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+body .featured-products .f-price .p-title span {
+  color: #f0626e;
+  font-size: 13px;
+  font-weight: 400;
+}
+body .featured-products .f-price .p-price {
+  width: 100%;
+  height: 55px;
+  position: absolute;
+  bottom: 0;
+  background-color: #f0626e;
+}
+body .featured-products .f-price .p-price .p-box {
+  width: 54px;
+  height: 100%;
+  border-top: 1px #d9dadc solid;
+  border-right: 1px #d9dadc solid;
+  background-color: white;
+  float: left;
+}
+body .featured-products .f-price .p-price .price {
+  width: 101px;
+  height: 100%;
+  font-size: 24px;
+  text-align: center;
+  padding-top: 10px;
+  color: white;
+  float: right;
+}
+body .featured-products .f-price .p-price .price .dolar {
+  font-size: 16px;
+  margin-right: 3px;
+}
+body .featured-products .f-price .p-price .price .cents {
+  font-size: 13px;
+  position: relative;
+  top: -7px;
 }

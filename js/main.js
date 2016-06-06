@@ -18,11 +18,11 @@ $(document).ready(function(){
       // Optional parameters
       direction: 'vertical',
       loop: true, 
-      slidesPerView: 3,
+      // slidesPerView: 3,
     })   
 
 
-    var $teaserGallery = $('.js-teaser-gallery-slider');
+    var $teaserGallery = $('.js-teaser-gallery-slider.slider1');
 
     if ($teaserGallery.length) {
 
@@ -34,9 +34,8 @@ $(document).ready(function(){
             var $this = $(this),
                 slidesPerView = 3, // Default slides per view
                 spaceBetween = 10, // space between slides
-                pagination = '.swiper-pagination',
-                nextButton = '.swiper-button-next',
-                prevButton = '.swiper-button-prev';
+                nextButton = '.swiper-button-next.slider1',
+                prevButton = '.swiper-button-prev.slider1';
 
             /**
              * if slidesPerView are set via data attribute (data-slides-per-view)
@@ -44,7 +43,7 @@ $(document).ready(function(){
              */
             if ($this.is('[data-slides-per-view]')) {
                 
-                var dataSlidesPerView = parseInt($this.attr('data-slides-per-view'), 10);
+                var dataSlidesPerView = parseInt($this.attr('data-slides-per-view'), 3);
                 
                 // check if dataSlidesPerView is numeric to take empty data-slides-per-view into account
                 if($.isNumeric(dataSlidesPerView)) {
@@ -61,17 +60,66 @@ $(document).ready(function(){
                 slidesPerGroup: slidesPerView,
                 spaceBetween: spaceBetween,
                 loop: true,
-                paginationClickable: true,
-                pagination: pagination,
                 nextButton: nextButton,
                 prevButton: prevButton
             });
 
+           
             /**
-             * move pagination above Swiper container
+             * for styling reasons move nav buttons
+             * above Swiper container
              */
-            var $pagination = $this.find(pagination);
-            $pagination.parent().before($pagination);
+            var $nextButton = $this.find(nextButton);
+            var $prevButton = $this.find(prevButton);
+            $nextButton.parent().before($nextButton);
+            $prevButton.parent().before($prevButton);
+
+        });
+    }
+
+    var $teaserGallery2 = $('.js-teaser-gallery-slider.slider2');
+
+    if ($teaserGallery2.length) {
+
+        $teaserGallery2.each(function() {
+
+            /**
+             * variables
+             */
+            var $this = $(this),
+                slidesPerView = 4, // Default slides per view
+                spaceBetween = 10, // space between slides
+                nextButton = '.swiper-button-next.slider2',
+                prevButton = '.swiper-button-prev.slider2';
+
+            /**
+             * if slidesPerView are set via data attribute (data-slides-per-view)
+             * update slidesPerView with value as number
+             */
+            if ($this.is('[data-slides-per-view]')) {
+                
+                var dataSlidesPerView = parseInt($this.attr('data-slides-per-view'), 4);
+                
+                // check if dataSlidesPerView is numeric to take empty data-slides-per-view into account
+                if($.isNumeric(dataSlidesPerView)) {
+                    var slidesPerView = dataSlidesPerView; // jshint ignore:line                
+                }
+                
+            }
+
+            /**
+             * initialize Swiper
+             */
+            new Swiper($this, {
+                slidesPerView: slidesPerView,
+                slidesPerGroup: slidesPerView,
+                spaceBetween: spaceBetween,
+                loop: true,
+                nextButton: nextButton,
+                prevButton: prevButton
+            });
+
+
 
             /**
              * for styling reasons move nav buttons
