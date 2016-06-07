@@ -77,7 +77,6 @@ body header .navbar-default .navbar-nav > .open > a:focus,
 body header .navbar-default .navbar-nav > .open > a:hover {
   color: #ef5966;
   background-color: white;
-  height: 100px;
 }
 body header .navbar {
   padding-left: 118px;
@@ -88,6 +87,7 @@ body header .navbar {
   font-size: 16px;
   font-weight: 400;
   color: white;
+  margin-bottom: 15px;
 }
 body header .navbar a {
   color: white;
@@ -95,13 +95,24 @@ body header .navbar a {
 }
 body header .dropdown-menu {
   width: 263px;
-  height: 388px;
+  height: auto;
   opacity: 0.9;
   background-color: white;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.33);
+  padding-top: 0;
+}
+body header .dropdown-menu .seeAllItems {
+  display: block;
+  width: 100%;
+  line-height: 42px;
+  color: #ef5966;
+  font-size: 16px;
+}
+body header .dropdown-menu .divider {
+  margin: 0;
 }
 body header .dropdown-menu .item1 {
-  padding: 25px 23px 18px 21px;
+  padding: 15px 23px 15px 21px;
 }
 body header .dropdown-menu .item1 .imgDropdown {
   width: 72px;
