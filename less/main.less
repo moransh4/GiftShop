@@ -762,10 +762,9 @@ body {
     footer {
         font-weight: 400;
         line-height: 30px;
-
-        .container{
-        	border-top: 1px #b9b9b9 solid;
-        	margin-top: 30px;
+        .container {
+            border-top: 1px #b9b9b9 solid;
+            margin-top: 30px;
         }
         h3 {
             color: #434343;
@@ -804,26 +803,46 @@ body {
                 float: left;
                 margin-right: 11px;
                 display: block;
-
-                &:nth-child(1){
-                	background-color: #f8bc2e;
+                text-align: center;
+                img {
+                    position: relative;
+                    top: 42%;
+                    transform: translateY(-50%);
                 }
-
-                &:nth-child(2){
-                	background-color: #39599f;
+                .circles-social {
+                    width: 30px;
+                    margin: 6px auto;
+                    .blue-circle {
+                        display: inline-block;
+                        width: 14px;
+                        height: 13px;
+                        background-color: #0063dc;
+                        border-radius: 50%;
+                        margin-right: 2px;
+                    }
+                    .pink-circle {
+                        display: inline-block;
+                        width: 14px;
+                        height: 13px;
+                        background-color: #ff0084;
+                        border-radius: 50%;
+                    }
                 }
-
-                &:nth-child(3){
-                	background-color: #45b0e3;
+                &:nth-child(1) {
+                    background-color: #f8bc2e;
                 }
-
-                &:nth-child(4){
-                	background-color: #fff;
-                	border: 1px solid #dbdbdb;
+                &:nth-child(2) {
+                    background-color: #39599f;
                 }
-
-                &:nth-child(5){
-                	background-color: #1872bf;
+                &:nth-child(3) {
+                    background-color: #45b0e3;
+                }
+                &:nth-child(4) {
+                    background-color: #fff;
+                    border: 1px solid #dbdbdb;
+                }
+                &:nth-child(5) {
+                    background-color: #1872bf;
                 }
             }
         }
