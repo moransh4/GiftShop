@@ -513,10 +513,14 @@ body .teaser-gallery__button-prev {
   position: absolute;
   left: 0px;
   top: 0;
-  background-color: #05aecc;
+  background-color: #3c3c3c;
   width: 70px;
   height: 79px;
   float: left;
+  border-right: 0.5px solid white;
+}
+body .teaser-gallery__button-prev:hover {
+  background-color: #05aecc;
 }
 body .swiper-button-prev {
   background-size: 15px;
@@ -530,6 +534,10 @@ body .teaser-gallery__button-next {
   width: 70px;
   height: 79px;
   float: right;
+  border-left: 0.5px solid white;
+}
+body .teaser-gallery__button-next:hover {
+  background-color: #05aecc;
 }
 body .swiper-button-next {
   background-size: 15px;
@@ -584,6 +592,10 @@ body .red-line {
   top: 1px;
   left: 28px;
   z-index: 9;
+}
+body .featured-products .teaser-gallery__button-prev:hover,
+body .featured-products .teaser-gallery__button-next:hover {
+  background-color: #f0626e;
 }
 body .featured-products .red-line {
   width: 255px;
