@@ -731,6 +731,10 @@ body footer {
   font-weight: 400;
   line-height: 30px;
 }
+body footer .container {
+  border-top: 1px #b9b9b9 solid;
+  margin-top: 30px;
+}
 body footer h3 {
   color: #434343;
   font-size: 25px;
@@ -768,6 +772,23 @@ body footer .social-media .box {
   background-color: blue;
   float: left;
   margin-right: 11px;
+  display: block;
+}
+body footer .social-media .box:nth-child(1) {
+  background-color: #f8bc2e;
+}
+body footer .social-media .box:nth-child(2) {
+  background-color: #39599f;
+}
+body footer .social-media .box:nth-child(3) {
+  background-color: #45b0e3;
+}
+body footer .social-media .box:nth-child(4) {
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+}
+body footer .social-media .box:nth-child(5) {
+  background-color: #1872bf;
 }
 body .btn-subscribe {
   border-radius: 0;
