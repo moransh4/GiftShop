@@ -1,25 +1,36 @@
 $(document).ready(function() {
-	$('#search').focus(function() {
-    $(this).parent().find('.placeholder').hide()
-       
-}).blur(function() {
-    if ($(this).val() == '') {
-        $(this).parent().find('.placeholder').show()
-    }
-})
-
-$(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();   
-
-});
 
 
-    var mySwiper = new Swiper ('.swiper-container', {
-      // Optional parameters
-      direction: 'vertical',
-      loop: true, 
-      // slidesPerView: 3,
-    })   
+    $('.placeholder').click(function() {
+        $(this).hide();
+        $('#search').focus();
+
+    });
+
+
+    $('#search').blur(function() {
+        if ($('#search').val() !== "") {
+            $('.placeholder').hide();
+        } else {
+            $('.placeholder').show();
+
+        }
+    })
+
+
+
+    $('[data-toggle="tooltip"]').tooltip();
+
+    // $( document ).tooltip();
+
+
+
+    var mySwiper = new Swiper('.swiper-container', {
+        // Optional parameters
+        direction: 'vertical',
+        loop: true,
+        // slidesPerView: 3,
+    })
 
 
     var $teaserGallery = $('.js-teaser-gallery-slider.slider1');
@@ -42,14 +53,14 @@ $(document).ready(function(){
              * update slidesPerView with value as number
              */
             if ($this.is('[data-slides-per-view]')) {
-                
+
                 var dataSlidesPerView = parseInt($this.attr('data-slides-per-view'), 3);
-                
+
                 // check if dataSlidesPerView is numeric to take empty data-slides-per-view into account
-                if($.isNumeric(dataSlidesPerView)) {
+                if ($.isNumeric(dataSlidesPerView)) {
                     var slidesPerView = dataSlidesPerView; // jshint ignore:line                
                 }
-                
+
             }
 
             /**
@@ -64,7 +75,7 @@ $(document).ready(function(){
                 prevButton: prevButton
             });
 
-           
+
             /**
              * for styling reasons move nav buttons
              * above Swiper container
@@ -97,14 +108,14 @@ $(document).ready(function(){
              * update slidesPerView with value as number
              */
             if ($this.is('[data-slides-per-view]')) {
-                
+
                 var dataSlidesPerView = parseInt($this.attr('data-slides-per-view'), 4);
-                
+
                 // check if dataSlidesPerView is numeric to take empty data-slides-per-view into account
-                if($.isNumeric(dataSlidesPerView)) {
+                if ($.isNumeric(dataSlidesPerView)) {
                     var slidesPerView = dataSlidesPerView; // jshint ignore:line                
                 }
-                
+
             }
 
             /**
@@ -133,6 +144,3 @@ $(document).ready(function(){
         });
     }
 });
-
-
-

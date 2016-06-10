@@ -26,10 +26,30 @@ body {
     .noPadding {
         padding: 0;
     }
+    .paddingLeft{
+    	padding-left: 0;
+    }
+    .peddingRight{
+    	padding-right: 5px !important;
+    }
+    .marginBottom{
+    	margin-bottom: 5px;
+    }
     header {
         margin-top: 10px;
         font-size: @header-fontsize;
         text-transform: capitalize;
+        .logo-wrapper {
+            width: 100%;
+            height: 126px;
+            position: relative;
+            img {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
         .upperMenu {
             float: right;
             li {
@@ -326,7 +346,7 @@ body {
                 input {
                     width: 375px;
                     height: 71px;
-                    background-color: white;
+                    // background-color: white;
                     box-shadow: 1px 1.7px 7px rgba(0, 0, 0, 0.19);
                     border-radius: 0;
                     float: left;
@@ -334,7 +354,7 @@ body {
                     margin-right: 9px;
                     font-size: 30px;
                     line-height: 30px;
-                    background: transparent;
+                    // background: transparent;
                     z-index: 999999;
                     /* margin-left: 57px; */
                 }
@@ -473,19 +493,16 @@ body {
             }
         }
     }
-    .tooltip > .tooltip-inner {
-        background-color: white;
-        border: 1px solid #f0626e;
-        border-radius: 4px;
-        opacity: 1;
-        color: black;
-        width: 111px;
-        // border: 1px red;
+    .tooltip.in {
+        opacity: 1 !important;
+        filter: alpha(opacity=100);
     }
-    .tooltip.top .tooltip-arrow {
+    .white-tooltip + .tooltip.top > .tooltip-inner {
         background-color: white;
-        opacity: 1;
-        border: 1px solid #f0626e;
+        color: black;
+    }
+    .white-tooltip + .tooltip.top > .tooltip-arrow {
+        border-top-color: white;
     }
     .products {
         position: relative;
@@ -503,11 +520,11 @@ body {
     }
     figure {
         margin: 0;
-        width: 370px;
-        height: 200px;
+        width: 100%;
+        height: 100%;
         &:hover {
-            width: 370px;
-            height: 200px;
+            width: 100%;
+            height: 100%;
             opacity: 0.88;
             background-color: #362a4f;
         }
@@ -533,11 +550,9 @@ body {
         width: 70px;
         height: 79px;
         float: left;
-                border-right: 0.5px solid white;
-
-
-        &:hover{
-        	background-color: #05aecc;
+        border-right: 0.5px solid white;
+        &:hover {
+            background-color: #05aecc;
         }
     }
     .swiper-button-prev {
@@ -553,8 +568,8 @@ body {
         height: 79px;
         float: right;
         border-left: 0.5px solid white;
-              &:hover{
-        	background-color: #05aecc;
+        &:hover {
+            background-color: #05aecc;
         }
     }
     .swiper-button-next {
@@ -604,8 +619,11 @@ body {
     .layer1 {
         opacity: 0.87;
         background-color: #142251;
-        width: 370px;
-        height: 200px;
+        width: 100%;
+        height: 100%;
+        img {
+            width: 100%;
+        }
     }
     // .layer2 {
     //     background: linear-gradient(rgba(255, 204, 0, 0.2), rgba(255, 204, 0, 0.2)) ;
@@ -623,20 +641,19 @@ body {
         z-index: 9;
     }
     .featured-products {
-    	.teaser-gallery__button-prev , .teaser-gallery__button-next{
-
-    		&:hover{
-    			    		background-color: #f0626e;
-
-    		}
-    	}
+        .teaser-gallery__button-prev,
+        .teaser-gallery__button-next {
+            &:hover {
+                background-color: #f0626e;
+            }
+        }
         .red-line {
             width: 255px;
         }
         figure {
             margin: 0;
             width: 270px;
-            height: 400px;
+            // height: 400px;
             position: relative;
         }
         .f-price {
@@ -885,3 +902,127 @@ body {
         background-color: #05aecc;
     }
 }
+
+@media  (max-width: 1185px)  {
+    body header .upperMenu li a {
+        margin-left: 22px;
+    }
+    body header .downMenu .boxes .box {
+        padding: 20px;
+    }
+    body header .downMenu {
+        height: 66px;
+    }
+    body header .navbar {
+        // padding-left: 0px; 
+        font-size: 13px;
+    }
+    body header .logo-wrapper {
+        height: 100px;
+    }
+    body .teaser-gallery__button-prev {
+        top: -20px;
+    }
+    body .teaser-gallery__button-next {
+        top: -20px;
+    }
+    body .shop .search form {
+        left: 12px;
+    }
+}
+
+@media (max-width: 991px) {
+    body header .navbar {
+        padding-left: 0px;
+        font-size: 13px;
+    }
+
+    body .peddingRight{
+    	padding-right: 15px !important;
+    }
+
+    body .paddingLeft {
+    padding-left: 15px !important;
+}
+
+body .shop .men{
+	margin-bottom: 5px;
+}
+
+body .shop .crafts{
+	margin-bottom: 5px;
+}
+}
+
+@media (max-width: 767px) {
+
+	.up-menu{
+		display: none;
+	}
+
+	body header .navbar{
+		background-color: transparent;
+		  //   width: 72px;
+    // height: 52px;
+    float: right;
+    position: absolute;
+    right: 0;
+    top: -75px;
+
+	}
+	.navbar{
+		border: none;
+	}
+
+	.navbar-toggle {
+  
+    padding: 22px 13px;
+}
+
+	body header .logo-wrapper{
+    width: 115px;
+    height: 71px;
+	}
+.navbar-default .navbar-toggle, .navbar-default .navbar-toggle{
+    background-color: #05aecc;
+}
+	.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #f0626e;
+}
+.navbar-toggle .icon-bar {
+	    width: 33px;
+    background-color: #434343;
+}
+.navbar-toggle .icon-bar+.icon-bar {
+    margin-top: 7px;
+}
+
+.navbar-collapse{
+	z-index: 99999;
+	background-color: #f0626e;
+	// width: 100%;
+	// height: auto;
+
+
+}
+
+body header .navbar-default .navbar-nav > li > a{
+	height: auto;
+}
+
+
+body header .navbar a{
+	line-height: 22px;
+	border-bottom: 1px solid white;
+}
+
+.navbar-nav{
+	margin: 0 0 ;
+}
+
+.nav>li{
+	text-align: center;
+	font-size: 22px;
+}
+}
+
