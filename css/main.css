@@ -757,7 +757,6 @@ body .about .registerNow {
 body .about .registerNow .a-register {
   text-align: center;
   display: block;
-  width: 648px;
   height: 61px;
   font-size: 28px;
   font-weight: 400;
@@ -912,6 +911,9 @@ body .btn-subscribe {
   .up-menu {
     display: none;
   }
+  body header {
+    margin-bottom: 10px;
+  }
   body header .navbar {
     background-color: transparent;
     float: right;
@@ -947,6 +949,7 @@ body .btn-subscribe {
   .navbar-collapse {
     z-index: 99999;
     background-color: #f0626e;
+    position: relative;
   }
   body header .navbar-default .navbar-nav > li > a {
     height: auto;
@@ -955,11 +958,119 @@ body .btn-subscribe {
     line-height: 22px;
     border-bottom: 1px solid white;
   }
+  body header .navbar-nav li:last-child > a {
+    border-bottom: none;
+  }
+  body header .dropdown-menu .item1 .item h4 {
+    color: black;
+  }
   .navbar-nav {
-    margin: 0 0 ;
+    margin: 0 0;
   }
   .nav > li {
     text-align: center;
     font-size: 22px;
+  }
+  body .baby-price {
+    height: 54px;
+  }
+}
+@media (max-width: 400px) {
+  body .shop .men {
+    height: 300px;
+  }
+  body .shop .wear-box h3 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  body .shop .wear-box p {
+    font-size: 11px;
+  }
+  body .shop .wear-box {
+    width: 288px;
+    height: 76px;
+  }
+  body .shop .simple-text {
+    width: 288px;
+    font-size: 13px;
+  }
+  body .shop .women .wear-box h3 {
+    font-size: 22px;
+    line-height: 22px;
+  }
+  body .shop .women .wear-box p {
+    font-size: 11px;
+  }
+  body .shop .women .wear-box {
+    width: 237px;
+  }
+  body .shop .women {
+    height: 218px;
+  }
+  body .shop .crafts {
+    height: 218px;
+  }
+  body .jewelry {
+    height: 300px;
+  }
+  body .shop .kids {
+    height: 218px;
+  }
+  body .shop .crafts .crafts-price {
+    width: 294px;
+    padding-left: 8px;
+  }
+  body .shop .crafts .crafts-price .crafts-price-title {
+    font-size: 20px;
+  }
+  body .jewelry .jewelry-title .vertical-text {
+    left: 12px;
+    top: 244px;
+    font-size: 31px;
+  }
+  body .jewelry .triangle-topright {
+    right: 70px;
+    top: 137px;
+  }
+  body .jewelry .enter-jewelry {
+    width: 80px;
+    height: 80px;
+    right: 0;
+    top: 57px;
+  }
+  body .jewelry .jewelry-title {
+    width: 67px;
+    height: 258px;
+  }
+  body .jewelry .enter-jewelry .white-circle {
+    width: 50px;
+    height: 50px;
+    top: 16px;
+    left: 18px;
+  }
+  body .jewelry .enter-jewelry .white-circle img {
+    top: 14px;
+    left: 20px;
+  }
+  body .about .box {
+    height: 155px;
+  }
+  body .about .box img {
+    left: 34px;
+    width: 89px;
+    top: 20px;
+  }
+  body .about .box span {
+    top: 38%;
+    right: 15px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  body header .dropdown-menu .item1 .item h4 {
+    margin-bottom: 4px;
+  }
+  .navbar-nav .open .dropdown-menu {
+    margin-top: -2px;
+    background-color: white;
   }
 }

@@ -26,14 +26,14 @@ body {
     .noPadding {
         padding: 0;
     }
-    .paddingLeft{
-    	padding-left: 0;
+    .paddingLeft {
+        padding-left: 0;
     }
-    .peddingRight{
-    	padding-right: 5px !important;
+    .peddingRight {
+        padding-right: 5px !important;
     }
-    .marginBottom{
-    	margin-bottom: 5px;
+    .marginBottom {
+        margin-bottom: 5px;
     }
     header {
         margin-top: 10px;
@@ -792,7 +792,7 @@ body {
             .a-register {
                 text-align: center;
                 display: block;
-                width: 648px;
+                // width: 648px;
                 height: 61px;
                 font-size: 28px;
                 font-weight: 400;
@@ -903,7 +903,7 @@ body {
     }
 }
 
-@media  (max-width: 1185px)  {
+@media (max-width: 1185px) {
     body header .upperMenu li a {
         margin-left: 22px;
     }
@@ -936,93 +936,191 @@ body {
         padding-left: 0px;
         font-size: 13px;
     }
-
-    body .peddingRight{
-    	padding-right: 15px !important;
+    body .peddingRight {
+        padding-right: 15px !important;
     }
-
     body .paddingLeft {
-    padding-left: 15px !important;
-}
-
-body .shop .men{
-	margin-bottom: 5px;
-}
-
-body .shop .crafts{
-	margin-bottom: 5px;
-}
+        padding-left: 15px !important;
+    }
+    body .shop .men {
+        margin-bottom: 5px;
+    }
+    body .shop .crafts {
+        margin-bottom: 5px;
+    }
 }
 
 @media (max-width: 767px) {
+    .up-menu {
+        display: none;
+    }
+    body header {
+        margin-bottom: 10px;
+    }
+    body header .navbar {
+        background-color: transparent;
+        //   width: 72px;
+        // height: 52px;
+        float: right;
+        position: absolute;
+        right: 0;
+        top: -75px;
+    }
+    .navbar {
+        border: none;
+    }
+    .navbar-toggle {
+        padding: 22px 13px;
+    }
+    body header .logo-wrapper {
+        width: 115px;
+        height: 71px;
+    }
+    .navbar-default .navbar-toggle,
+    .navbar-default .navbar-toggle {
+        background-color: #05aecc;
+    }
+    .navbar-default .navbar-toggle:focus,
+    .navbar-default .navbar-toggle:hover {
+        background-color: #f0626e;
+    }
+    .navbar-toggle .icon-bar {
+        width: 33px;
+        background-color: #434343;
+    }
+    .navbar-toggle .icon-bar+.icon-bar {
+        margin-top: 7px;
+    }
+    .navbar-collapse {
+        z-index: 99999;
+        background-color: #f0626e;
+        position: relative;
+        // width: 100%;
+        // height: auto;
+    }
+    body header .navbar-default .navbar-nav > li > a {
+        height: auto;
+    }
+    body header .navbar a {
+        line-height: 22px;
+        border-bottom: 1px solid white;
+    }
+    body header .navbar-nav li:last-child > a {
+        border-bottom: none;
+    }
+    body header .dropdown-menu .item1 .item h4 {
+        color: black;
+    }
+    .navbar-nav {
+        margin: 0 0;
+    }
+    .nav>li {
+        text-align: center;
+        font-size: 22px;
+    }
 
-	.up-menu{
-		display: none;
-	}
-
-	body header .navbar{
-		background-color: transparent;
-		  //   width: 72px;
-    // height: 52px;
-    float: right;
-    position: absolute;
-    right: 0;
-    top: -75px;
-
-	}
-	.navbar{
-		border: none;
-	}
-
-	.navbar-toggle {
-  
-    padding: 22px 13px;
+     body .baby-price{
+    	height: 54px;
+    }
 }
 
-	body header .logo-wrapper{
-    width: 115px;
-    height: 71px;
-	}
-.navbar-default .navbar-toggle, .navbar-default .navbar-toggle{
-    background-color: #05aecc;
-}
-	.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-    background-color: #f0626e;
-}
-.navbar-toggle .icon-bar {
-	    width: 33px;
-    background-color: #434343;
-}
-.navbar-toggle .icon-bar+.icon-bar {
-    margin-top: 7px;
-}
+@media (max-width: 400px) {
+    body .shop .men {
+        height: 300px;
+    }
+    body .shop .wear-box h3 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    body .shop .wear-box p {
+        font-size: 11px;
+    }
+    body .shop .wear-box {
+        width: 288px;
+        height: 76px;
+    }
+    body .shop .simple-text {
+        width: 288px;
+        font-size: 13px;
+    }
+    body .shop .women .wear-box h3 {
+        font-size: 22px;
+        line-height: 22px;
+    }
+    body .shop .women .wear-box p {
+        font-size: 11px;
+    }
+    body .shop .women .wear-box {
+        width: 237px;
+    }
+    body .shop .women {
+        height: 218px;
+    }
+    body .shop .crafts {
+        height: 218px;
+    }
+    body .jewelry {
+        height: 300px;
+    }
+    body .shop .kids {
+        height: 218px;
+    }
+    body .shop .crafts .crafts-price {
+        width: 294px;
+        padding-left: 8px;
+    }
+    body .shop .crafts .crafts-price .crafts-price-title {
+        font-size: 20px;
+    }
+    body .jewelry .jewelry-title .vertical-text {
+        left: 12px;
+        top: 244px;
+        font-size: 31px;
+    }
+    body .jewelry .triangle-topright {
+        right: 70px;
+        top: 137px;
+    }
+    body .jewelry .enter-jewelry {
+        width: 80px;
+        height: 80px;
+        right: 0;
+        top: 57px;
+    }
+    body .jewelry .jewelry-title {
+        width: 67px;
+        height: 258px;
+    }
+    body .jewelry .enter-jewelry .white-circle {
+        width: 50px;
+        height: 50px;
+        top: 16px;
+        left: 18px;
+    }
+    body .jewelry .enter-jewelry .white-circle img {
+        top: 14px;
+        left: 20px;
+    }
+    body .about .box {
+        height: 155px;
+    }
+    body .about .box img {
+        left: 34px;
+        width: 89px;
+        top: 20px;
+    }
+    body .about .box span {
+        top: 38%;
+        right: 15px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    body header .dropdown-menu .item1 .item h4 {
+        margin-bottom: 4px;
+    }
+    .navbar-nav .open .dropdown-menu {
+        margin-top: -2px;
+        background-color: white;
+    }
 
-.navbar-collapse{
-	z-index: 99999;
-	background-color: #f0626e;
-	// width: 100%;
-	// height: auto;
-
-
 }
-
-body header .navbar-default .navbar-nav > li > a{
-	height: auto;
-}
-
-
-body header .navbar a{
-	line-height: 22px;
-	border-bottom: 1px solid white;
-}
-
-.navbar-nav{
-	margin: 0 0 ;
-}
-
-.nav>li{
-	text-align: center;
-	font-size: 22px;
-}
-}
-
